@@ -1,0 +1,171 @@
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\KobraSoftware.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\KobraSoftware.pdb
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Antlr3.Runtime.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DataEF.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.Core.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\EntityFramework.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.Edm.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.OData.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Newtonsoft.Json.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Spatial.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Helpers.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.OData.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Mvc.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Optimization.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Providers.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Razor.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Razor.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\WebGrease.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\WebMatrix.Data.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\WebMatrix.WebData.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DataEF.pdb
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\EntityFramework.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Newtonsoft.Json.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Helpers.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Mvc.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Razor.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Razor.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\WebMatrix.Data.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\WebMatrix.WebData.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.Core.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.OData.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.Edm.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.OData.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\System.Spatial.xml
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\de\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\es\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\fr\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\it\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ja\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ko\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\ru\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.csprojResolveAssemblyReference.cache
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.dll
+C:\Users\Avell B155\Desktop\TCC Sistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.pdb
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\KobraSoftware.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\KobraSoftware.pdb
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Antlr3.Runtime.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DataEF.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.Core.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\EntityFramework.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.Edm.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.OData.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Newtonsoft.Json.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Spatial.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Helpers.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.OData.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Mvc.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Optimization.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Providers.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Razor.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Razor.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\WebGrease.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\WebMatrix.Data.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\WebMatrix.WebData.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DataEF.pdb
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\EntityFramework.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Newtonsoft.Json.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Helpers.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Mvc.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Razor.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.WebPages.Razor.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\WebMatrix.Data.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\WebMatrix.WebData.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.Core.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.OData.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.Edm.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\Microsoft.Data.OData.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Spatial.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\de\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\es\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\fr\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\it\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ja\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ko\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\ru\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.csprojResolveAssemblyReference.cache
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\obj\Debug\KobraSoftware.pdb
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.WebHost.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.WebHost.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Net.Http.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Web.Http.xml
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Net.Http.Formatting.dll
+C:\Users\Avell B155\Desktop\TCCSistema\KobraSoftware\KobraSoftware\bin\System.Net.Http.Formatting.xml

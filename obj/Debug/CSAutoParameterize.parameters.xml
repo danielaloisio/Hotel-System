@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="KobraEntities-Web.config Connection String" description="KobraEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/kobraEF.csdl|res://*/kobraEF.ssdl|res://*/kobraEF.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=kobrasoft.database.windows.net;initial catalog=kobrasoft;user id=kobrasoft;password=Aghyu**Cf;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Avell\ B155\\Desktop\\TCCSistema\\KobraSoftware\\KobraSoftware\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='KobraEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Avell\ B155\\Desktop\\TCCSistema\\KobraSoftware\\KobraSoftware\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

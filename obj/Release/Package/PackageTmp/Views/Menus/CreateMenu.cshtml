@@ -1,0 +1,73 @@
+﻿@model IEnumerable<DataEF.Menus>
+
+@if (Model.Count() <= 0)
+{
+
+}
+else
+{
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="@Url.Action("Index", "Home")"><i class="fa fa-home fa-fw"></i>Home</a>
+                </li>
+                @foreach (var item in Model.OrderBy(e => e.DisplayOrder))
+                {
+                    <li>
+                        <a href="javascript:void(0);"><i class="@(item.Icon) fa-fw"></i>@item.Display<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                             @foreach (var subItem in item.Menus1.Where(e => e.Deleted == false && e.Profiles.Where(ee => ee.ProfileId == ViewBag.userlogged).Count() > 0).OrderBy(e => e.DisplayOrder))
+                            {
+                                <li>
+                                    <a href="@(Url.Action((string.IsNullOrEmpty(subItem.Action) ? "Index" : subItem.Action), subItem.Controller))">
+                                         @subItem.Display
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                }
+            </ul>
+
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+}
+
+@*@{
+    var profileId = Shared.Security.CustomPrincipal.CurrentUser().profileId;
+}
+<ul class="nav nav-list" style="top: 0px;">
+    @if (Model.Count() <= 0)
+    {
+
+    }
+    else
+    {
+        foreach (var item in Model.OrderBy(e => e.DisplayOrder))
+        {
+        <li  data-section="@(item.Section)">
+            <a href="javascript:void(0);" class="dropdown-toggle">
+                <i class="menu-icon @(item.Icon)"></i>
+                <span class="menu-text">@(item.DisplayResource ? i18n.Resource.ResourceManager.GetString(item.Display) : item.Display)</span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+            <ul class="submenu">
+                @foreach (var subItem in item.Menus2.Where(e => e.Deleted == false && e.Area == item.Area && e.ProfilesMenus.Where(ee => ee.ProfileId == profileId).Count() > 0).OrderBy(e => e.DisplayOrder))
+                {
+                    <li data-controller="@(subItem.Controller)_@(string.IsNullOrEmpty(subItem.Action) ? "Index" : subItem.Action)">
+                        <a href="@(Url.Action((string.IsNullOrEmpty(subItem.Action) ? "Index" : subItem.Action), subItem.Controller, new { section = item.Section }))">
+                            <i class="icon-double-angle-right"></i>
+                            @(subItem.DisplayResource ? i18n.Resource.ResourceManager.GetString(subItem.Display) : subItem.Display)
+                        </a>
+                    </li>
+                }
+            </ul>
+        </li>       
+   
+        }
+    }
+</ul>*@

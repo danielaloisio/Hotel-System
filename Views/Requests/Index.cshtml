@@ -1,0 +1,173 @@
+﻿@model IEnumerable<DataEF.Requests>
+
+@{
+    ViewBag.Title = "Solicitações";
+    ViewBag.SubTitle = "Gerenciamento de Solicitações";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="control">
+            <a href="@Url.Action("Create", new { id = ViewBag.ClientId })" class="btn btn-primary">Criar novo</a>
+            <a  href="@Url.Action("Index", "Monitoring")" class="btn btn-default">Voltar</a>
+        </div>
+        <br />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @ViewBag.SubTitle
+            </div>
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RequestId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClientId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ServiceId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Services.Price)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreatedDate)
+                                </th>
+                                <th>Status
+                                </th>
+                                <th>Ações
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RequestId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Clients.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Services.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Services.Price)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CreatedDate)
+                                    </td>
+                                    @if (item.Realized == true)
+                                    {
+                                        <td style="background-color: #b3e2b2">Realizado
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td style="background-color: #ed5151">Não realizado
+                                        </td>
+                                    }
+
+                                    <td class="center">
+                                        <a  href="@Url.Action("Edit", "Requests", new { id = item.RequestId })">
+                                            <i class="icon-green fa fa-pencil-square-o" title="Editar"></i>
+                                        </a>
+                                        <a href="@Url.Action("Delete", "Requests", new { id = item.RequestId })">
+                                            <i class="icon-red fa fa-trash" title="Deletar"></i>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <i class="icon-green fa fa-coffee btnSolicitation" data-requestid="@item.RequestId" title="Solicitações realizadas"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialog"></div>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+@section scripts{
+    <script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+    <script src="~/Scripts/jquery-ajax.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#dataTables').DataTable({
+                responsive: true,
+                "oLanguage": {
+                    "sProcessing": "Processando...",
+                    "sLengthMenu": "Exibir _MENU_ registros",
+                    "sZeroRecords": "Não foram encontrados resultados",
+                    "sInfo": "Exibindo de _START_ a _END_ de _TOTAL_ registros",
+                    "sInfoEmpty": "Exibindo de 0 a 0 de 0 registros",
+                    "sInfoFiltered": "(filtrado de _MAX_ registros no total)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Busca Rápida:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "«« Primeiro",
+                        "sPrevious": "« Anterior",
+                        "sNext": "Seguinte »",
+                        "sLast": "Último »»"
+                    }
+                }
+            });
+
+        });
+        $("html").on("click", ".btnSolicitation", function () {
+            var that = $(this);
+            var requestid = $(this).data("requestid");
+
+            $("#dialog").dialog({
+                resizable: false,
+                height: 200,
+                width: 300,
+                modal: true,
+                title: "Solicitação realizada",
+                buttons: {
+                    Sim: function () {
+                        $.ajaxJson({
+                            url: "@Url.Action("SolicitionConclued", "Requests")",
+                            data: JSON.stringify({ id: requestid, clientid: @ViewBag.ClientId }),
+                            success: function (json) {
+                                if (json.erro == false) {
+                                    location.reload();
+                                    //$('#refresh').load(document.URL + ' #refresh');
+                                }
+                            }
+                        });
+                        $(this).dialog("close");
+                    },
+                    Não: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            $("#dialog").html("Solicitação já concluída ?");
+        });
+  </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+

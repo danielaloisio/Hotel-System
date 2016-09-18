@@ -1,0 +1,72 @@
+﻿@model DataEF.Rooms
+
+@{
+    ViewBag.Title = "Cadastro de quartos";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro 
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm("Create", "Rooms", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.DeviceId)
+                                @Html.DropDownList("DeviceId", (SelectList)ViewBag.DeviceId, "Selecione", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.DeviceId)
+                            </div>
+                            
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Number)
+                                @Html.TextBoxFor(model => model.Number, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Number)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Block)
+                                @Html.TextBoxFor(model => model.Block, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Block)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Floor)
+                                @Html.TextBoxFor(model => model.Floor, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Floor)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PriceRoom)
+                                @Html.TextBoxFor(model => model.PriceRoom, new { @class = "form-control Price" })
+                                @Html.ValidationMessageFor(model => model.PriceRoom)
+                            </div>
+                            <div class="control">
+                                <input type="submit" class="btn btn-primary" value="Salvar" />
+                                <a  href="@Url.Action("Index")" class="btn btn-default">Voltar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(function () {
+            $(".Price").setMask('decimal');
+        });
+    </script>
+}

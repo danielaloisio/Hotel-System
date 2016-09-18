@@ -1,0 +1,60 @@
+﻿@model DataEF.Requests
+
+@{
+    ViewBag.Title = "Cadastro de solicitações";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro 
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm("Edit", "Requests", FormMethod.Post, new { enctype = "multipart/form-data", id = "form-client" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            @Html.HiddenFor(model => model.RequestId)
+                            @Html.HiddenFor(model => model.ClientId)
+                            @Html.HiddenFor(model => model.DeletedDate)
+                            @Html.HiddenFor(model => model.AlterDate)
+                            @Html.HiddenFor(model => model.Deleted)
+                            @Html.HiddenFor(model => model.CreatedDate)
+                            @Html.HiddenFor(model => model.Active)
+                            @Html.HiddenFor(model => model.CheckOut)
+                            @Html.HiddenFor(model => model.Realized)
+                           
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.ServiceId)
+                                @Html.DropDownList("ServiceId", (SelectList)ViewBag.ServiceId, "Selecione", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ServiceId)
+                            </div>
+                            <div class="control">
+                                <input type="submit" class="btn btn-primary" value="Salvar" />
+                                <a  href="@Url.Action("Index", new { id = Model.ClientId })" class="btn btn-default">Voltar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        $(function () {
+            $("#ServiceId").val("@Model.ServiceId");
+        });
+    </script>
+}

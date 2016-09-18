@@ -1,0 +1,180 @@
+﻿@model DataEF.Clients
+
+@{
+    ViewBag.Title = "Cadastro de clientes";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro 
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm("Create", "Clients", FormMethod.Post, new { enctype = "multipart/form-data", id = "form-client" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.GenderId)
+                                @Html.DropDownList("GenderId", (SelectList)ViewBag.GenderId, "Selecione", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.GenderId)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.RoomId)
+                                @Html.DropDownList("RoomId", (SelectList)ViewBag.RoomId, "Selecione", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.RoomId)
+                            </div>
+                            <div class="form-group hidden" id="roomprice">
+                                <label>Preço do quarto</label>
+                                <div id="priceroom"></div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name)
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Name)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Email)
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Email)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Telephone)
+                                @Html.TextBoxFor(model => model.Telephone, new { @class = "form-control Phone" })
+                                @Html.ValidationMessageFor(model => model.Telephone)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Document)
+                                @Html.TextBoxFor(model => model.Document, new { @class = "form-control CPF" })
+                                @Html.ValidationMessageFor(model => model.Document)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.BirthDate)
+                                @Html.TextBoxFor(model => model.BirthDate, new { @class = "form-control Date" })
+                                @Html.ValidationMessageFor(model => model.BirthDate)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.QtdDays)
+                                @Html.TextBoxFor(model => model.QtdDays, new { @class = "form-control Numbers" })
+                                @Html.ValidationMessageFor(model => model.QtdDays)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active)
+                                @Html.EditorFor(model => model.Active, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Active)
+                            </div>
+                            <div class="control">
+                                <input type="submit" class="btn btn-primary" value="Salvar" />
+                                <a  href="@Url.Action("Index")" class="btn btn-default">Voltar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-ajax.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".CPF").setMask('cpf');
+            $(".Date").setMask('date');
+            $(".Phone").setMask('phone');
+            $(".Numbers").setMask('numbers');
+        });
+
+        $("#form-client").validate({
+            rules: {
+                GenderId: {
+                    required: true,
+                },
+                RoomId: {
+                    required: true,
+                },
+                Name: {
+                    required: true,
+                },
+                Email: {
+                    required: true,
+                },
+                Telephone: {
+                    required: true,
+                },
+                Document: {
+                    required: true,
+                    cpf: true
+                },
+
+                BirthDate: {
+                    required: true,
+                },
+                QtdDays: {
+                    required: true,
+                },
+            },
+            messages: {
+
+                GenderId: {
+                    required: "O campo [Sexo] é obrigatório.",
+                },
+                RoomId: {
+                    required: "O campo [Quarto] é obrigatório.",
+                },
+                Name: {
+                    required: "O campo [Nome] é obrigatório.",
+                },
+                Email: {
+                    required: "O campo [E-mail] é obrigatório.",
+                },
+                Telephone: {
+                    required: "O campo [Telefone] é obrigatório.",
+                },
+                Document: {
+                    required: "O campo [CPF] é obrigatório.",
+                },
+                BirthDate: {
+                    required: "O campo [Data de nascimento] é obrigatório.",
+                },
+                QtdDays: {
+                    required: "O campo [Quantidade de dias] é obrigatório.",
+                },
+
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+
+        $("html").on("change", "#RoomId", function () {
+            var roomid = $(this).val();
+            if (roomid == "") {
+                $("#roomprice").addClass("hidden")
+                $("#priceroom").html("");
+                return false;
+            }
+            $.ajaxJson({
+                url: "@Url.Action("GetPriceRoom", "Clients")",
+                data: JSON.stringify({ roomid: roomid }),
+                success: function (json) {
+                    if (json.erro == false) {
+                        $("#roomprice").removeClass("hidden")
+                        $("#priceroom").html("R$"+json.price);
+                    }
+                }
+            });
+        });
+    </script>
+}

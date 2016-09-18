@@ -1,0 +1,148 @@
+﻿@model IEnumerable<DataEF.Requests>
+
+@{
+    ViewBag.Title = "Total os serviços";
+    ViewBag.SubTitle = "serviços";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <p>
+            <a href="@Url.Action("Index", "Monitoring")" class="btn btn-default">Voltar</a>
+        </p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @ViewBag.SubTitle
+            </div>
+            <div class="panel-body">
+                <div>Cliente: @ViewBag.clientname</div>
+                <div class="dataTable_wrapper">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RequestId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ServiceId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Services.Price)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RequestId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Services.Name)
+                                    </td>
+                                    <td>R$&nbsp;@Html.DisplayFor(modelItem => item.Services.Price)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="control">
+                        <input type="button" class="btn btn-primary btncheckout" value="Checkout" />
+                    </div>
+
+                    <div class="col-md-4" style="margin-left: 800px;">
+                        <div class="col-md-2">
+                            Serviços:
+                        </div>
+                        <div class="col-md-2">
+                            R$&nbsp;@(ViewBag.totalsolicitation)
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: 800px;">
+                        <div class="col-md-2">
+                            Quarto:
+                        </div>
+                        <div class="col-md-2">
+                            R$&nbsp;@(ViewBag.priceroom)
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: 800px;">
+                        <div class="col-md-2">
+                            Dias:
+                        </div>
+                        <div class="col-md-2">
+                            @(ViewBag.qtddays)
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: 800px;">
+                        <div class="col-md-2">
+                            Total:
+                        </div>
+                        <div class="col-md-2">
+                            R$&nbsp;@(ViewBag.totalsolicitation + (ViewBag.priceroom * ViewBag.qtddays))
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialog"></div>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+@section scripts{
+    <script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+    <script src="~/Scripts/jquery-ajax.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+        });
+
+        $("html").on("click", ".btncheckout", function () {
+
+            $("#dialog").dialog({
+                resizable: false,
+                height: 200,
+                width: 300,
+                modal: true,
+                title: "Solicitação realizada",
+                buttons: {
+                    Sim: function () {
+                        $.ajaxJson({
+                            url: "@Url.Action("CheckOut", "Requests")",
+                            data: JSON.stringify({clientid: @ViewBag.ClientId }),
+                            success: function (json) {
+                                if (json.erro == false) {
+
+                                    window.location  = "@Url.Action("Index", "Home")";
+                                }
+                            }
+                        });
+                        $(this).dialog("close");
+                    },
+                    Não: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            $("#dialog").html("Deseja realizar o CheckOut ?");
+        });
+    </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+

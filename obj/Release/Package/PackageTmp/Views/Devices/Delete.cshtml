@@ -1,0 +1,66 @@
+﻿@model DataEF.Devices
+
+@{
+    ViewBag.Title = "Deletar dipositivo";
+    ViewBag.SubTile = "Dipositivo";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Deseja realmente deletar o dipositivo ?
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.DeviceId):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.DeviceId)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.Device):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.Device)
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.IME):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.IME)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <input type="submit" class="btn btn-primary" value="Deletar" />
+                                    <a  href="@Url.Action("Index")" class="btn btn-default">Voltar</a>
+                                </p>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,71 @@
+﻿@model DataEF.Services
+
+@{
+    ViewBag.Title = "Cadastro de serviços";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro 
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm("Create", "Services", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name)
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Name)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Price)
+                                @Html.TextBoxFor(model => model.Price, new { @class = "form-control Price" })
+                                @Html.ValidationMessageFor(model => model.Price)
+                            </div>                        
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description)
+                                @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Description)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Image)
+                                <input type="file" id="Image" name="Image" data-val-required="O campo [Imagem] é obrigatório." data-val="true" />
+                                @Html.ValidationMessageFor(model => model.Image)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active)
+                                @Html.EditorFor(model => model.Active, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Active)
+                            </div>
+                            <div class="control">
+                                <input type="submit" class="btn btn-primary" value="Salvar" />
+                                <a  href="@Url.Action("Index")" class="btn btn-default">Voltar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(function () {
+            $(".Price").setMask('decimal');
+        });
+    </script>
+}

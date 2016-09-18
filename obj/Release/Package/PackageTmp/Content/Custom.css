@@ -1,0 +1,33 @@
+﻿.center {
+    text-align: center;
+}
+
+.icon-red {
+    color: red;
+}
+
+.icon-green {
+    color: green;
+}
+
+.icon-blue {
+    color: blue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+label.error {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 1px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+    font-weight: normal;
+}
+
+.field-validation-error {
+    color: #FB3A3A;
+}

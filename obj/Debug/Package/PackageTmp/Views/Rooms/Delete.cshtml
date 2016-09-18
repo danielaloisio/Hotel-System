@@ -1,0 +1,82 @@
+﻿@model DataEF.Rooms
+
+@{
+    ViewBag.Title = "Deletar quarto";
+    ViewBag.SubTile = "Quarto";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Deseja realmente deletar o quarto ?
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.RoomId):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.RoomId)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.DeviceId):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.Devices.Device)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.Number):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.Number)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.Block):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.Block)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    @Html.DisplayNameFor(model => model.Floor):
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.DisplayFor(model => model.Floor)
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <input type="submit" class="btn btn-primary" value="Deletar" />
+                                    <a  href="@Url.Action("Index")" class="btn btn-default">Voltar</a>
+                                </p>
+                            </div>
+   
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
